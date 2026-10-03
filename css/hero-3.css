@@ -1,0 +1,272 @@
+@import url("https://fonts.cdnfonts.com/css/futura-lt");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pf-hero-3 {
+  font-family: var(--font-futura);
+  background: #fff;
+  position: relative;
+  padding: 0;
+}
+
+.pf-hero-3 img {
+  display: block;
+}
+
+.pf-hero-3 button,
+.pf-hero-3 a {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pf-hero-3 button * {
+  cursor: inherit;
+}
+
+.pf-hero-3 .pf-hero-wrapper {
+  position: relative;
+}
+
+.pf-hero-3 .pf-hero-slide {
+  position: relative;
+  z-index: 2;
+}
+
+.pf-hero-3 .pf-hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.pf-hero-3 .pf-hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pf-hero-3 .pf-hero-inner {
+  min-height: 100vh;
+  padding: 220px 46px 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 120px;
+}
+
+.pf-hero-3 .pf-hero-title {
+  font-size: 225px;
+  line-height: 1.1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pf-hero-3 .pf-hero-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+}
+
+.pf-hero-3 .pf-hero-subtitle {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 1024px;
+}
+
+.pf-hero-3 .pf-hero-callback a {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #171717cc;
+  background: #fff;
+  padding: 22px 28px;
+  border-radius: 50px;
+}
+
+.pf-hero-3 .pf-hero-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  padding: 0 46px 46px;
+}
+
+.pf-hero-3 .pf-hero-bottominner {
+  border-top: 1px solid #ffffff59;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pf-hero-3 .pf-hero-navBtn {
+  background: none;
+  border: none;
+  padding: 2px;
+}
+
+.pf-hero-3 .pf-hero-pagination {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  max-width: fit-content;
+}
+
+.pf-hero-3 .pf-hero-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  outline: 2px solid transparent;
+  opacity: 1;
+  margin: 0;
+  transition: 300ms ease;
+}
+
+.pf-hero-3 .pf-hero-pagination .swiper-pagination-bullet-active {
+  background: transparent;
+  outline-color: #fff;
+}
+
+.pf-hero-3 .pf-hero-social {
+  position: absolute;
+  left: 46px;
+  top: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 4;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.pf-hero-3 .pf-hero-slinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+.pf-hero-3 .pf-hero-soffer {
+  writing-mode: sideways-lr;
+  font-size: 10px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 18px 10px;
+  background: #1717170d;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-hero-3 .pf-hero-inner {
+    padding: 180px 32px 160px;
+    gap: 160px;
+  }
+
+  .pf-hero-3 .pf-hero-title {
+    font-size: 160px;
+  }
+
+  .pf-hero-3 .pf-hero-subtitle {
+    font-size: 48px;
+    max-width: 800px;
+  }
+
+  .pf-hero-3 .pf-hero-callback a {
+    font-size: 14px;
+    padding: 18px 24px;
+  }
+
+  .pf-hero-3 .pf-hero-bottom {
+    padding: 0 32px 32px;
+  }
+
+  .pf-hero-3 .pf-hero-bottominner {
+    padding: 16px 0;
+  }
+
+  .pf-hero-3 .pf-hero-social {
+    left: 32px;
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-hero-3 .pf-hero-inner {
+    padding: 140px 24px 120px;
+    gap: 120px;
+  }
+
+  .pf-hero-3 .pf-hero-title {
+    font-size: 120px;
+  }
+
+  .pf-hero-3 .pf-hero-subtitle {
+    font-size: 36px;
+    max-width: 640px;
+  }
+
+  .pf-hero-3 .pf-hero-bottom {
+    padding: 0 24px 24px;
+  }
+
+  .pf-hero-3 .pf-hero-social {
+    left: 24px;
+    gap: 4px;
+  }
+
+  .pf-hero-3 .pf-hero-slinks {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-hero-3 .pf-hero-inner {
+    padding: 100px 16px 120px;
+    gap: 80px;
+  }
+
+  .pf-hero-3 .pf-hero-title {
+    font-size: 88px;
+  }
+
+  .pf-hero-3 .pf-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pf-hero-3 .pf-hero-social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-hero-3 .pf-hero-title {
+    font-size: 72px;
+  }
+
+  .pf-hero-3 .pf-hero-subtitle {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,133 @@
+.pf-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  color: var(--white);
+  transition: all linear 350ms;
+}
+
+.pf-header.header-sticky {
+  position: fixed;
+  background-color: inherit;
+  color: #000;
+}
+
+.pf-header .pf-header-wrapper {
+  width: 100%;
+  padding: 20px 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.pf-header .pf-header-nav .pf-header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-futura);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.pf-header .pf-header-nav .pf-header-nav-list li,
+.pf-header .pf-header-nav .pf-header-nav-list li * {
+  cursor: pointer;
+  color: inherit;
+}
+
+.pf-header .pf-header-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pf-header .pf-header-logo a {
+  font-family: var(--font-futura);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.pf-header .pf-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pf-header .pf-icons a{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    color: inherit;
+}
+
+.pf-header .pf-icons a,
+.pf-header .pf-icons a *{
+    cursor: pointer;
+}
+
+.pf-header .header-drawer{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100vh;
+  max-width: 350px;
+  background-color: var(--white);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 24px;
+  display: none;
+}
+
+.pf-header .header-drawer .pf-header-nav .pf-header-nav-list{
+  color: var(--black);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.pf-header .header-drawer .heading-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0px 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--black);
+}
+
+.pf-header .header-drawer .heading-box .heading{
+  font-family: var(--font-futura);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.pf-header .header-drawer .heading-box .close-btn{
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: var(--black);
+}
+
+.pf-header .header-drawer .heading-box .close-btn svg{
+  width: 100%;
+  height: 100%;
+}

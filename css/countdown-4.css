@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pf-countdown-4 {
+  font-family: "Inter", sans-serif;
+  padding: 100px 0;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pf-countdown-4 img {
+  display: block;
+}
+
+.pf-countdown-4 button,
+.pf-countdown-4 a {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pf-countdown-4 button * {
+  cursor: inherit;
+}
+
+.pf-countdown-4 .pf-countdown-wrapper {
+  display: grid;
+  grid-template-columns: 14fr 15fr auto;
+  gap: 24px;
+}
+
+.pf-countdown-4 .pf-countdown-video {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pf-countdown-4 .pf-countdown-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pf-countdown-4 .pf-countdown-content {
+  background: #242833;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.pf-countdown-4 .pf-countdown-title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.pf-countdown-4 .pf-countdown-desc {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #ffffffb2;
+  margin-bottom: 16px;
+}
+
+.pf-countdown-4 .pf-countdown-timer {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pf-countdown-4 .pf-countdown-timer span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #242833;
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.pf-countdown-4 .pf-countdown-message {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pf-countdown-4 .pf-countdown-callback a {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #242833;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 32px;
+  border-radius: 50px;
+}
+
+.pf-countdown-4 .pf-countdown-right {
+  width: 300px;
+  padding-left: 12px;
+}
+
+.pf-countdown-4 .pf-countdown-slider {
+  width: 100%;
+}
+
+.pf-countdown-4 .pf-countdown-slide {
+  width: 100%;
+}
+
+.pf-countdown-4 .pf-product-card {
+  width: 100%;
+}
+
+.pf-countdown-4 .pf-product-head {
+  position: relative;
+}
+
+.pf-countdown-4 .pf-product-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pf-countdown-4 .pf-product-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #ffd600;
+  padding: 7px 14px;
+  background: #000000;
+  border-radius: 50px;
+}
+
+.pf-countdown-4 .pf-product-body {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.pf-countdown-4 .pf-product-title {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #242833;
+  margin-bottom: 16px;
+}
+
+.pf-countdown-4 .pf-product-price {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #242833;
+  margin-bottom: 16px;
+}
+
+.pf-countdown-4 .pf-product-price span {
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.pf-countdown-4 .pf-product-callback a {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  background: #121212;
+  padding: 12px 20px;
+  border-radius: 50px;
+}
+
+.pf-countdown-4 .pf-product-pagination {
+  margin-top: 32px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pf-countdown-4 .pf-product-pagination .swiper-pagination-bullet {
+  width: 24px;
+  height: 4px;
+  background: #24283333;
+  border-radius: 2px;
+  margin: 0;
+  opacity: 1;
+  position: relative;
+  transition: 300ms ease;
+}
+
+.pf-countdown-4 .pf-product-pagination .swiper-pagination-bullet-active {
+  width: 48px;
+}
+
+.pf-countdown-4 .pf-product-pagination .swiper-pagination-bullet::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #242833;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pf-countdown-4 .pf-product-pagination .swiper-pagination-bullet-active::after {
+  animation: timer-bar 3000ms linear forwards;
+}
+
+@keyframes timer-bar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .pf-countdown-4 .pf-container {
+    max-width: 1560px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-countdown-4 .pf-countdown-wrapper {
+    gap: 16px;
+  }
+
+  .pf-countdown-4 .pf-countdown-title {
+    font-size: 28px;
+  }
+
+  .pf-countdown-4 .pf-countdown-right {
+    width: 280px;
+    padding-left: 0;
+  }
+
+  .pf-countdown-4 .pf-product-pagination {
+    margin-top: 20px;
+    padding: 12px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-countdown-4 .pf-countdown-wrapper {
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+  }
+
+  .pf-countdown-4 .pf-countdown-video {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    min-height: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-countdown-4 .pf-countdown-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .pf-countdown-4 .pf-countdown-video {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pf-countdown-4 .pf-countdown-title {
+    font-size: 24px;
+  }
+
+  .pf-countdown-4 .pf-countdown-desc {
+    font-size: 15px;
+  }
+
+  .pf-countdown-4 .pf-countdown-callback a {
+    padding: 14px 22px;
+  }
+}

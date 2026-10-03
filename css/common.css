@@ -1,0 +1,14 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    
+    --font-futura: "Futura LT", sans-serif;
+}
+
+@import url("https://fonts.cdnfonts.com/css/futura-lt");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

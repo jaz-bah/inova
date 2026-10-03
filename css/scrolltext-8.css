@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pf-scrolltext-8 {
+  padding: 200px 0 120px;
+  overflow: hidden;
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-wrapper {
+  position: relative;
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-marquee {
+  --gap: 110px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  background: #f6f6f6;
+  padding: 32px 0;
+  transform: rotate(1.7deg);
+  transform-origin: top left;
+  width: calc(100% + 10px);
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-marquee:last-child {
+  background: #fde68a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: calc(100% + 20px);
+  transform: rotate(-4.7deg) translateY(20px);
+  transform-origin: bottom left;
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-content {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scrollText8 16s linear infinite reverse;
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-marquee:last-child .pf-scrolltext8-content {
+  animation: scrollText8 16s linear infinite;
+}
+
+@keyframes scrollText8 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-img {
+  height: 60px;
+}
+
+.pf-scrolltext-8 .pf-scrolltext8-img * {
+  width: auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-scrolltext-8 .pf-scrolltext8-marquee {
+    padding: 20px 0;
+  }
+
+  .pf-scrolltext-8 .pf-scrolltext8-marquee:last-child {
+    transform: rotate(-4.7deg) translateY(0);
+  }
+
+  .pf-scrolltext-8 .pf-scrolltext8-img {
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-scrolltext-8 .pf-scrolltext8-marquee:last-child {
+    transform: rotate(-4.7deg) translateY(-40px);
+  }
+}

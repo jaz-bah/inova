@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.pf-featcollection-26 {
+  font-family: "Roboto", sans-serif;
+  padding: 100px 0;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pf-featcollection-26 img {
+  display: block;
+}
+
+.pf-featcollection-26 button,
+.pf-featcollection-26 a {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pf-featcollection-26 button * {
+  cursor: inherit;
+}
+
+.pf-featcollection-26 .pf-collection-wrapper {
+  background: #191919;
+  padding: 100px 0;
+}
+
+.pf-featcollection-26 .pf-section-top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.pf-featcollection-26 .pf-section-title {
+  font-family: "Fjalla One", sans-serif;
+  font-size: clamp(80px, 18vw, 308px);
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #191919;
+  text-shadow: 1px 1px #ffffff4d, -1px -1px #ffffff4d, 1px -1px #ffffff4d,
+    -1px 1px #ffffff4d;
+}
+
+.pf-featcollection-26 .pf-collection-content {
+  position: relative;
+  margin-top: 100px;
+}
+
+.pf-featcollection-26 .pf-collection-topclip {
+  width: 100%;
+  background: #191919;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  clip-path: ellipse(65% 60% at 50% 0%);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transform: translateY(-35%);
+}
+
+.pf-featcollection-26 .pf-collection-content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: clamp(36px, 12%, 64px);
+  background: #191919;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  clip-path: ellipse(51% 100% at 50% 100%);
+}
+
+.pf-featcollection-26 .pf-collection-slider {
+  width: 100%;
+}
+
+.pf-featcollection-26 .pf-product-card {
+  width: 100%;
+  position: relative;
+}
+
+.pf-featcollection-26 .pf-product-img {
+  width: 100%;
+  aspect-ratio: 2/3;
+}
+
+.pf-featcollection-26 .pf-product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding: 84px 20px;
+}
+
+.pf-featcollection-26 .pf-product-tag {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.pf-featcollection-26 .pf-product-title {
+  font-family: "Fjalla One", sans-serif;
+  font-size: clamp(24px, 3vw, 35px);
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pf-featcollection-26 .pf-collection-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pf-featcollection-26 .pf-collection-nav button {
+  width: 54px;
+  height: 54px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  transition: 300ms;
+}
+
+.pf-featcollection-26 .pf-collection-nav button.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pf-featcollection-26 .pf-collection-nav button svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .pf-featcollection-26 .pf-collection-content {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-featcollection-26 .pf-collection-content {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-featcollection-26 .pf-collection-content {
+    margin-top: 40px;
+  }
+
+  .pf-featcollection-26 .pf-collection-content::after {
+    height: 32px;
+  }
+}

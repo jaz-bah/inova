@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pf-featcollection-6 {
+  font-family: "Inter", sans-serif;
+  padding: 100px 0;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pf-featcollection-6 img {
+  display: block;
+}
+
+.pf-featcollection-6 button,
+.pf-featcollection-6 a {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pf-featcollection-6 button * {
+  cursor: inherit;
+}
+
+.pf-featcollection-6 .pf-section-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #24283333;
+}
+
+.pf-featcollection-6 .pf-section-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.pf-featcollection-6 .pf-section-title {
+  font-size: 80px;
+  line-height: 0.9;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #2428330d;
+}
+
+.pf-featcollection-6 .pf-section-subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #242833;
+}
+
+.pf-featcollection-6 .pf-section-callback a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 32px;
+  border: 1px solid #242833;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #242833;
+}
+
+.pf-featcollection-6 .pf-collection-slider {
+  width: 100%;
+}
+
+.pf-featcollection-6 .pf-collection-slider .swiper-slide {
+  width: 300px;
+}
+
+.pf-featcollection-6 .pf-collection-product {
+  width: 100%;
+}
+
+.pf-featcollection-6 .pf-product-head {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pf-featcollection-6 .pf-product-img {
+  width: 100%;
+  aspect-ratio: 60/75;
+}
+
+.pf-featcollection-6 .pf-product-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 7px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.pf-featcollection-6 .pf-product-badge.new-product {
+  display: block;
+  color: #fff;
+  background: #0cb771;
+}
+
+.pf-featcollection-6 .pf-product-badge.sold-out {
+  color: #24283399;
+  background: #e2e2e3;
+}
+
+.pf-featcollection-6 .pf-product-badge.on-sale {
+  color: #ffd600;
+  background: #000000;
+}
+
+.pf-featcollection-6 .pf-product-cartBtn button {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 48px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background: #242833;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 0;
+  transform: scale(0.5);
+  visibility: hidden;
+  transition: 300ms ease;
+}
+
+.pf-featcollection-6 .pf-product-head:hover .pf-product-cartBtn button {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.pf-featcollection-6 .pf-product-body {
+  padding: 30px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pf-featcollection-6 .pf-product-name {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #242833;
+  margin-bottom: 8px;
+}
+
+.pf-featcollection-6 .pf-product-price {
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #242833;
+  margin-bottom: 16px;
+}
+
+.pf-featcollection-6 .pf-product-price span {
+  font-weight: 400;
+  text-decoration: line-through;
+  padding-left: 4px;
+}
+
+.pf-featcollection-6 .pf-product-colors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.pf-featcollection-6 .pf-product-color {
+  display: block;
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 3.33px 0px #00000026;
+}
+
+.pf-featcollection-6 .pf-collection-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pf-featcollection-6 .pf-collection-nav button {
+  width: 48px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  transition: 300ms ease;
+}
+
+.pf-featcollection-6 .pf-collection-nav button.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pf-featcollection-6 .pf-collection-nav button svg {
+  width: 16px;
+}
+
+@media screen and (min-width: 1600px) {
+  .pf-featcollection-6 .pf-container {
+    max-width: 1560px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-featcollection-6 .pf-section-title {
+    font-size: 64px;
+  }
+
+  .pf-featcollection-6 .pf-section-subtitle {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-featcollection-6 .pf-section-title {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-featcollection-6 .pf-section-title {
+    font-size: 52px;
+  }
+}
